@@ -95,7 +95,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 117
+        "__id__": 116
       }
     ],
     "_prefab": null,
@@ -156,9 +156,6 @@
     "_components": [
       {
         "__id__": 115
-      },
-      {
-        "__id__": 116
       }
     ],
     "_prefab": null,
@@ -3532,27 +3529,6 @@
       "__uuid__": "06055f0f-9d39-4547-b3e1-6a85184d001a"
     },
     "fileId": "a77f4+Q9dtJRo0EQeuByXYH"
-  },
-  {
-    "__type__": "1eb34zsvVtO3r6+ZOtj4Qlx",
-    "_name": "",
-    "_objFlags": 0,
-    "node": {
-      "__id__": 3
-    },
-    "_enabled": false,
-    "target": null,
-    "offset": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "scale": 1,
-    "scene": {
-      "__id__": 4
-    },
-    "type": 0,
-    "trackSpeed": 5
   },
   {
     "__type__": "cc.Animation",
