@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "3b53c6e2-e372-4906-b003-fbfbc74a6235",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "Union4Boom": {
+      "ver": "1.0.3",
+      "uuid": "9f20e850-f758-4b17-aef2-c7458ccfd3de",
+      "rawTextureUuid": "3b53c6e2-e372-4906-b003-fbfbc74a6235",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": -1,
+      "offsetY": 52.5,
+      "trimX": 2,
+      "trimY": 2,
+      "width": 506,
+      "height": 403,
+      "rawWidth": 512,
+      "rawHeight": 512,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
