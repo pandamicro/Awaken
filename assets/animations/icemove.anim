@@ -1,0 +1,101 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "icemove",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2.25,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "paths": {
+      "ice1": {
+        "props": {
+          "position": [
+            {
+              "frame": 0,
+              "value": [
+                0,
+                0
+              ],
+              "motionPath": [
+                [
+                  -36,
+                  -154,
+                  -37,
+                  -133,
+                  -35,
+                  -181
+                ]
+              ],
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": [
+                11,
+                -283
+              ],
+              "motionPath": [
+                [
+                  167,
+                  -428,
+                  78,
+                  -376,
+                  267,
+                  -486
+                ]
+              ]
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": [
+                391,
+                -504
+              ],
+              "motionPath": [
+                [
+                  579,
+                  -409,
+                  594,
+                  -530,
+                  569,
+                  -316
+                ]
+              ]
+            },
+            {
+              "frame": 1,
+              "value": [
+                340,
+                -68
+              ],
+              "motionPath": []
+            }
+          ]
+        }
+      },
+      "scene": {
+        "props": {
+          "scaleX": [],
+          "scaleY": []
+        }
+      }
+    },
+    "comps": {
+      "Camera": {
+        "scale": [
+          {
+            "frame": 1.0833333333333333,
+            "value": 1
+          },
+          {
+            "frame": 2.25,
+            "value": 3
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}
