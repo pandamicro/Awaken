@@ -1,4 +1,4 @@
-
+var Scene = require('Scene');
 
 
 var Player = cc.Class({
@@ -14,6 +14,8 @@ var Player = cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
+
+        scene: Scene,
         
         gravity:-5,
         Attractive:10,
@@ -38,7 +40,6 @@ var Player = cc.Class({
 
     // use this for initialization
     onLoad: function () {
-        
         // 初始化跳跃动作
         this.jumpAction = this.setJumpAction();
         //this.node.runAction(this.jumpAction);
@@ -58,7 +59,15 @@ var Player = cc.Class({
         // 初始化键盘输入监听
         this.setInputControl();
     },
-    
+
+    lightUp: function () {
+        var succeed = this.scene.lightUp();
+
+        this.enabled = false;
+        if (succeed) {
+            this.scene.startSpread();
+        }
+    },
 
     
     BeAttract:function( x,y ,direction )
@@ -122,6 +131,9 @@ var Player = cc.Class({
             // 有按键按下时，判断是否是我们指定的方向控制键，并设置向对应方向加速
             onKeyPressed: function(keyCode, event) {
                 switch(keyCode) {
+                    case cc.KEY.space:
+                        self.lightUp();
+                        break;
                     case cc.KEY.a:
                         self.accLeft = true;
                         self.accRight = false;
@@ -185,10 +197,6 @@ var Player = cc.Class({
         this.attractiveX=this.attractiveX+airRX;
         this.attractiveY=this.attractiveY+airRY;
         
-        
-      
-        
-        
         // if(airRX>= Math.abs(this.attractiveX * dt/2))
         // {
         //     airRX=-this.attractiveX * dt/2;
@@ -207,12 +215,15 @@ var Player = cc.Class({
         //         this.dtAcc=dt*0.3;
         // }
          // 根据当前速度更新主角的位置
-        this.node.x += (this.attractiveX * this.dtAcc ) ;
-        this.node.y += (this.attractiveY * this.dtAcc);
+        this.node.x = this.node.x + (this.attractiveX * this.dtAcc );
+        this.node.y = this.node.y + (this.attractiveY * this.dtAcc);
          
          
-        //cc.log(this.attractiveX,this.attractiveY ,this.gravity);
-         
+        // Check dead
+        if (!this.scene.checkLive()) {
+            // Dead
+            this.enabled = false;
+        }
          
         return;
         
