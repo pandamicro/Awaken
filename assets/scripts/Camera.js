@@ -13,6 +13,7 @@ cc.Class({
         target: cc.Node,
         offset: cc.Vec2,
         scale: 1,
+        scene: cc.Node,
         
         type: {
             type: CameraType,
@@ -36,12 +37,37 @@ cc.Class({
     // called every frame, uncomment this function to activate update callback
     lateUpdate: function (dt) {
         var targetTrans = this.target.getNodeToWorldTransform();
+        var halfW = cc.winSize.width / 2,
+            halfH = cc.winSize.height / 2,
+            halfSW = this.scene.width / 2,
+            halfSH = this.scene.height / 2,
+            s = this.scale;
+
         if (this._prevPos.x !== targetTrans.tx || this._prevPos.y !== targetTrans.ty) {
             var appx = this.target._anchorPoint.x * this.target.width;
             var appy = this.target._anchorPoint.y * this.target.height;
             if (this.type === CameraType.INSTANT) {
-                this.node.x += cc.winSize.width / 2 - (targetTrans.tx + appx + this.offset.x);
-                this.node.y += cc.winSize.height / 2 - (targetTrans.ty + appy + this.offset.y);
+                var x = this.node.x + halfW - (targetTrans.tx + appx + this.offset.x);
+                var y = this.node.y + halfH - (targetTrans.ty + appy + this.offset.y);
+
+                var l = x + halfW - halfSW * s;
+                if (l > 0) {
+                    x -= l;
+                }
+                var b = y + halfH - halfSH * s;
+                if (b > 0) {
+                    y -= b;
+                }
+                var r = halfW - x - halfSW * s;
+                if (r > 0) {
+                    x += r;
+                }
+                var t = halfH - y - halfSH * s;
+                if (t > 0) {
+                    y += t;
+                }
+                this.node.x = x;
+                this.node.y = y;
             }
             else {
                 this._targetPos.x = this.node.x + cc.winSize.width / 2 - (targetTrans.tx + appx + this.offset.x);

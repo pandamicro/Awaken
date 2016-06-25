@@ -1,6 +1,6 @@
 {
   "__type__": "cc.AnimationClip",
-  "_name": "spread",
+  "_name": "spreadBorder",
   "_objFlags": 0,
   "_rawFiles": null,
   "_duration": 2.4833333333333334,
@@ -9,30 +9,26 @@
   "wrapMode": 1,
   "curveData": {
     "props": {
-      "width": [
+      "scaleX": [
         {
           "frame": 0,
-          "value": 0,
-          "curve": "linear"
+          "value": 0
         },
         {
           "frame": 2.4833333333333334,
-          "value": 1600
+          "value": 3.2
         }
       ],
-      "height": [
+      "scaleY": [
         {
           "frame": 0,
-          "value": 0,
-          "curve": "linear"
+          "value": 0
         },
         {
           "frame": 2.4833333333333334,
-          "value": 1600
+          "value": 3.2
         }
       ]
-    },
-    "paths": {
     }
   },
   "events": []

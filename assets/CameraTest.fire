@@ -264,7 +264,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 67,
-      "height": 68
+      "height": 67
     },
     "_children": [],
     "_rotationX": 0,
@@ -305,7 +305,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "ce066f4c-8284-4f53-8b76-eec0c45d2b44"
+      "__uuid__": "ae0c863c-ad5a-43c7-b483-5130607df904"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -357,6 +357,9 @@
       "y": 0
     },
     "scale": 1,
+    "scene": {
+      "__id__": 4
+    },
     "type": 1,
     "trackSpeed": 5
   },
