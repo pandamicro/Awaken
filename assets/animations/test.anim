@@ -3,7 +3,7 @@
   "_name": "test",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 0.8333333333333334,
+  "_duration": 2.5,
   "sample": 60,
   "speed": 1,
   "wrapMode": 2,
@@ -13,23 +13,18 @@
         {
           "frame": 0,
           "value": [
-            -480,
-            -319
-          ]
+            -206,
+            -157
+          ],
+          "motionPath": []
         },
         {
-          "frame": 0.4166666666666667,
+          "frame": 2.5,
           "value": [
-            285,
-            450
-          ]
-        },
-        {
-          "frame": 0.8333333333333334,
-          "value": [
-            -480,
-            -319
-          ]
+            323,
+            16
+          ],
+          "motionPath": []
         }
       ]
     }

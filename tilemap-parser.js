@@ -45,7 +45,7 @@ if (url) {
                 pts[j] = pts[j].split(',');
                 pts[j] = [
                     parseInt(pts[j][0]) + x,
-                    height - (parseInt(pts[j][1]) + y)
+                    parseInt(pts[j][1]) + y
                 ];
             }
             polygons.push(pts);
