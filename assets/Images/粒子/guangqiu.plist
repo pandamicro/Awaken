@@ -71,9 +71,9 @@
 	<key>sourcePositionVariancey</key>
 	<real>0</real>
 	<key>sourcePositionx</key>
-	<real>473.81395348837214</real>
+	<real>517.3333333333334</real>
 	<key>sourcePositiony</key>
-	<real>248.55813953488374</real>
+	<real>529.7777777777778</real>
 	<key>speed</key>
 	<real>64</real>
 	<key>speedVariance</key>
@@ -95,7 +95,7 @@
 	<key>startColorVarianceRed</key>
 	<real>0</real>
 	<key>startParticleSize</key>
-	<real>63</real>
+	<real>55</real>
 	<key>startParticleSizeVariance</key>
 	<real>0</real>
 	<key>tangentialAccelVariance</key>
