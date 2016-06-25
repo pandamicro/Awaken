@@ -16,7 +16,8 @@ cc.Class({
          player: {
             default: null,
             type: Player
-        }
+        },
+        direction:0,
     },
 
     // use this for initialization
@@ -28,7 +29,7 @@ cc.Class({
     Attract : function()
     {
         var playerComp = this.player;
-        playerComp.BeAttract(this.node.x,this.node.y);
+        playerComp.BeAttract(this.node.x,this.node.y,this.direction);
     },
     
     setInputControl: function () 

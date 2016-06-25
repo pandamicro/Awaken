@@ -1,3 +1,6 @@
+
+
+
 var Player = cc.Class({
     extends: cc.Component,
 
@@ -28,6 +31,9 @@ var Player = cc.Class({
         
         accelX: 0,
         accelY: 0,
+        
+        //衰减值
+        weaken:0.04,
     },
 
     // use this for initialization
@@ -55,7 +61,7 @@ var Player = cc.Class({
     
 
     
-    BeAttract:function( x,y )
+    BeAttract:function( x,y ,direction )
     {   
         this.StartFlag=1;
         cc.log(x,y);
@@ -70,6 +76,18 @@ var Player = cc.Class({
         
         this.attractiveX= Math.cos(radius) * this.Attractive;
         this.attractiveY= Math.sin(radius) * this.Attractive;
+        
+        
+        if(direction===0)
+        {
+            
+        }
+        else
+        {
+            this.attractiveX=-this.attractiveX;
+            this.attractiveY=-this.attractiveY;
+        }
+        
         
         this.airresistance=0;
         this.dtAcc=0;
@@ -148,7 +166,7 @@ var Player = cc.Class({
         var temp=this.gravity ;
         this.attractiveY=this.attractiveY+ temp;
          
-        this.airresistance= Math.sqrt(this.attractiveX * this.attractiveX + this.attractiveY *this.attractiveY) *0.04;
+        this.airresistance= Math.sqrt(this.attractiveX * this.attractiveX + this.attractiveY *this.attractiveY) *this.weaken;
 
         
         var airRX;
