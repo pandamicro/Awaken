@@ -3,7 +3,7 @@
   "_name": "icemove",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 2.25,
+  "_duration": 1.8166666666666667,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -86,12 +86,12 @@
       "Camera": {
         "scale": [
           {
-            "frame": 1.0833333333333333,
+            "frame": 1.3333333333333333,
             "value": 1
           },
           {
-            "frame": 2.25,
-            "value": 3
+            "frame": 1.8166666666666667,
+            "value": 0.3
           }
         ]
       }

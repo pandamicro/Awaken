@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="1136" tileheight="640" nextobjectid="40">
+ <tileset firstgid="1" name="场景" tilewidth="1136" tileheight="640" tilecount="1" columns="1">
+  <image source="../Images/场景.png" trans="ff00ff" width="1136" height="640"/>
+ </tileset>
+ <layer name="Tile Layer 1" width="1" height="1">
+  <data>
+   <tile gid="1"/>
+  </data>
+ </layer>
+ <objectgroup name="Object Layer 1">
+  <object id="7" x="0" y="164.756">
+   <polygon points="0,0 82.3778,-26.7171 -1.11321,-168.095"/>
+  </object>
+  <object id="8" x="82.3778" y="136.925">
+   <polygon points="0,0 111.321,-4.45286 34.5096,-135.812"/>
+  </object>
+  <object id="10" x="194.812" y="131.359">
+   <polygon points="0,0 100.189,22.2643 64.5664,-123.567"/>
+  </object>
+  <object id="11" x="295.002" y="153.624">
+   <polygon points="0,0 101.302,67.906 84.6043,-129.133"/>
+  </object>
+  <object id="12" x="397.417" y="223.756">
+   <polygon points="0,0 123.567,60.1135 238.228,56.7739 134.699,-223.756"/>
+  </object>
+  <object id="13" x="620.06" y="282.756">
+   <polygon points="0,0 86.8307,40.0757 139.152,45.6418 193.699,-1.11321 200.378,-83.491 208.171,-158.076 44.5286,-273.851"/>
+  </object>
+  <object id="17" x="829.344" y="124.68">
+   <polygon points="0,0 43.4153,-73.4721 -91.2835,-63.4532"/>
+  </object>
+  <object id="18" x="871.646" y="53.4343">
+   <polygon points="0,0 43.4153,-31.17 -20.0378,-42.3021"/>
+  </object>
+  <object id="20" x="912.835" y="23.3775">
+   <polygon points="0,0 52.3211,-3.33964 14.4718,-18.9246"/>
+  </object>
+  <object id="21" x="964.043" y="21.1511">
+   <polygon points="0,0 27.8303,10.0189 16.6982,-16.6982"/>
+  </object>
+  <object id="22" x="991.874" y="32.2832">
+   <polygon points="0,0 67.906,71.2457 79.0382,-23.3775"/>
+  </object>
+  <object id="23" x="1058.67" y="101.302">
+   <polygon points="0,0 41.1889,77.925 61.2268,-15.585"/>
+  </object>
+  <object id="24" x="1099.86" y="180.341">
+   <polygon points="0,0 34.5096,115.774 36.7361,-21.1511"/>
+  </object>
+  <object id="25" x="1136.59" y="420.795">
+   <polygon points="0,0 -32.2832,102.416 -2.22643,130.246"/>
+  </object>
+  <object id="26" x="1105.42" y="524.324">
+   <polygon points="0,0 -46.755,24.4907 14.4718,82.3778"/>
+  </object>
+  <object id="27" x="1059.78" y="548.814">
+   <polygon points="0,0 -63.4532,-8.90571 -44.5286,56.7739"/>
+  </object>
+  <object id="28" x="999.666" y="542.135">
+   <polygon points="0,0 -125.793,-107.982 -122.454,34.5096"/>
+  </object>
+  <object id="29" x="873.873" y="435.267">
+   <polygon points="0,0 -31.17,-10.0189 -61.2268,1.11321 -128.02,69.0193 3.33964,143.605"/>
+  </object>
+  <object id="32" x="748.08" y="503.173">
+   <polygon points="0,0 -107.982,65.6796 -148.057,100.189 130.246,76.8118"/>
+  </object>
+  <object id="34" x="603.362" y="602.249">
+   <polygon points="0,0 -109.095,30.0568 -21.1511,37.8493"/>
+  </object>
+  <object id="36" x="497.607" y="630.079">
+   <polygon points="0,0 -53.4343,4.45286 -14.4718,14.4718"/>
+  </object>
+  <object id="37" x="448.625" y="634.532">
+   <polygon points="0,0 -111.321,-31.17 -99.076,4.45286"/>
+  </object>
+  <object id="38" x="340.643" y="606.702">
+   <polygon points="0,0 -76.8118,-57.8871 -61.2268,26.7171"/>
+  </object>
+  <object id="39" x="264.945" y="551.041">
+   <polygon points="0,0 -70.1325,-83.491 -150.284,-119.114 -228.209,-118.001 -267.171,-103.529 16.6982,89.0571"/>
+  </object>
+ </objectgroup>
+</map>
