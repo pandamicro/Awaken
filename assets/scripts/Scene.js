@@ -115,8 +115,9 @@ cc.Class({
         this.colorScene.x = -this.mask.x;
         this.colorScene.y = -this.mask.y;
 
-        this.mask.getComponent(cc.Animation).play();
-        this.phare.getComponent(cc.Animation).play();
+        // this.mask.getComponent(cc.Animation).play();
+        // this.phare.getComponent(cc.Animation).play();
+        this.node.parent.getComponent(cc.Animation).play();
     },
 
     hideDrawNode: function () {

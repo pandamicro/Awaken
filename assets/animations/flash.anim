@@ -1,0 +1,81 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "flash",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 3.5,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "comps": {
+      "Camera": {
+        "scale": [
+          {
+            "frame": 0,
+            "value": 1
+          },
+          {
+            "frame": 0.9833333333333333,
+            "value": 2.1
+          },
+          {
+            "frame": 3.5,
+            "value": 1
+          }
+        ]
+      }
+    },
+    "paths": {
+      "场景/mask": {
+        "props": {
+          "width": [
+            {
+              "frame": 0.9833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 3.5,
+              "value": 2200
+            }
+          ],
+          "height": [
+            {
+              "frame": 0.9833333333333333,
+              "value": 0
+            },
+            {
+              "frame": 3.5,
+              "value": 2200
+            }
+          ]
+        }
+      },
+      "场景/糊糊光圈": {
+        "props": {
+          "scaleX": [
+            {
+              "frame": 0.9833333333333333,
+              "value": 0.000001
+            },
+            {
+              "frame": 3.4833333333333334,
+              "value": 4.56
+            }
+          ],
+          "scaleY": [
+            {
+              "frame": 0.9833333333333333,
+              "value": 0.000001
+            },
+            {
+              "frame": 3.4833333333333334,
+              "value": 4.56
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
