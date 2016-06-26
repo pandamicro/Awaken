@@ -68,8 +68,8 @@ var Player = cc.Class({
     lightUp: function () {
         var succeed = this.scene.lightUp();
 
-        this.enabled = false;
         if (succeed) {
+            this._active = false;
             this.scene.startSpread();
             cc.audioEngine.playEffect("res/raw-assets/resources/win.wav", false, 1);
         }
