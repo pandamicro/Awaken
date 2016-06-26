@@ -128,6 +128,11 @@ cc.Class({
         this.colorScene.y = -this.mask.y;
 
         this.node.parent.getComponent(cc.Animation).play();
+        this.scheduleOnce(this.pass, 4);
+    },
+
+    pass: function () {
+        
     },
 
     hideDrawNode: function () {
