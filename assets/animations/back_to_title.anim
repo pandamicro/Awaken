@@ -1,0 +1,39 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "back_to_title",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 2,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 2,
+          "value": 255
+        }
+      ]
+    },
+    "comps": {
+      "Camera": {
+        "scale": [
+          {
+            "frame": 0,
+            "value": 3
+          },
+          {
+            "frame": 2,
+            "value": 1
+          }
+        ]
+      }
+    }
+  },
+  "events": []
+}

@@ -35,6 +35,7 @@ var Attacker = cc.Class({
     enter: function () {
         var level = "level" + Attacker.level;
         Attacker.level++;
+
         var camera = this.camera;
         var canvas = this.camera.parent;
         cc.loader.loadRes(level, function (err, prefab) {
@@ -45,6 +46,7 @@ var Attacker = cc.Class({
             var levelCam = cc.instantiate(prefab);
             canvas.addChild(levelCam, 100);
             camera.active = false;
+            camera.currentTarget = this.target;
             // levelCam.opacity = 0;
         });
     }
