@@ -5809,11 +5809,11 @@
     },
     "_enabled": true,
     "_defaultClip": {
-      "__uuid__": "399da324-e971-46ad-88fd-14852c22b18b"
+      "__uuid__": "4147d7e7-a59c-4c54-9e60-dd0b8497e1ab"
     },
     "_clips": [
       {
-        "__uuid__": "399da324-e971-46ad-88fd-14852c22b18b"
+        "__uuid__": "4147d7e7-a59c-4c54-9e60-dd0b8497e1ab"
       }
     ],
     "playOnLoad": false
