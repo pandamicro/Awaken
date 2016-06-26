@@ -13,23 +13,42 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
-         player: {
+        player: {
             default: null,
             type: Player
         },
         direction:0,
+        attractCount: 1,
     },
 
     // use this for initialization
     onLoad: function () 
     {
         this.setInputControl();
+        this.attracted = 0;
+    },
+
+    die: function () {
+        this.node.active = false;
+    },
+
+    reset: function () {
+        this.node.active = true;
+        this.node.runAction(cc.fadeIn(0.5));
+        this.attracted = 0;
     },
     
     Attract : function()
     {
+        if (this.attracted >= this.attractCount) {
+            return;
+        }
         var playerComp = this.player;
         playerComp.BeAttract(this.node.x,this.node.y,this.direction);
+        this.attracted++;
+        if (this.attracted >= this.attractCount) {
+            this.node.runAction(cc.sequence(cc.fadeOut(0.5), cc.callFunc(this.die, this)));
+        }
     },
     
     setInputControl: function () 

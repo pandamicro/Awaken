@@ -8,6 +8,8 @@ cc.Class({
         level: 0,
         hero: cc.Node,
         targets: [cc.Node],
+        handles: [cc.Node],
+        enemies: [cc.Node],
         mask: cc.Node,
         phare: cc.Node,
         colorScene: cc.Node,
@@ -20,7 +22,6 @@ cc.Class({
 
         for (var i = 0, l = polygons.length; i < l; ++i) {
             var polygon = polygons[i];
-
         }
 
         var segments = VisibilityPolygon.convertToSegments(polygons);
@@ -49,6 +50,13 @@ cc.Class({
             cc.fadeTo(0.7, 0),
             cc.callFunc(this.hideDrawNode, this)
         );
+    },
+
+    reset: function () {
+        var i;
+        for (i = 0; i < this.handles.length; i++) {
+            this.handles[i].getComponent('Neurons').reset();
+        }
     },
 
     lightUp: function () {
@@ -115,8 +123,6 @@ cc.Class({
         this.colorScene.x = -this.mask.x;
         this.colorScene.y = -this.mask.y;
 
-        // this.mask.getComponent(cc.Animation).play();
-        // this.phare.getComponent(cc.Animation).play();
         this.node.parent.getComponent(cc.Animation).play();
     },
 
