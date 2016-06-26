@@ -13,11 +13,18 @@
         "scale": [
           {
             "frame": 0,
-            "value": 1
+            "value": 1,
+            "curve": "linear"
           },
           {
             "frame": 0.9833333333333333,
-            "value": 2.1
+            "value": 2.1,
+            "curve": [
+              0.16,
+              0.75,
+              0.44,
+              0.79
+            ]
           },
           {
             "frame": 3.5,
