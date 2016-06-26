@@ -72,6 +72,9 @@ var Player = cc.Class({
         if (succeed) {
             this.scene.startSpread();
         }
+        else {
+            this.die();
+        }
     },
 
     reborn: function () {
