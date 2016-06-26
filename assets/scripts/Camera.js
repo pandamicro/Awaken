@@ -36,6 +36,9 @@ cc.Class({
 
     // called every frame, uncomment this function to activate update callback
     lateUpdate: function (dt) {
+        if (!this.scene || !this.target) {
+            return;
+        }
         var targetTrans = this.target.getNodeToWorldTransform();
         var halfW = cc.winSize.width / 2,
             halfH = cc.winSize.height / 2,
