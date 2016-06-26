@@ -682,9 +682,7 @@
       "__id__": 15
     },
     "_enabled": true,
-    "_spriteFrame": {
-      "__uuid__": "12cada4a-6e6e-4ae6-963e-c49c22cec982"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_sizeMode": 1,
     "_fillType": 0,
@@ -932,7 +930,7 @@
       "__id__": 35
     },
     "gravity": -8,
-    "Attractive": 600,
+    "Attractive": 920,
     "jumpHeight": 100,
     "jumpDuration": 1,
     "maxMoveSpeed": 200,
@@ -940,7 +938,7 @@
     "maxJumpCount": 2,
     "accelX": 0,
     "accelY": 0,
-    "weaken": 0.05
+    "weaken": 0.04
   },
   {
     "__type__": "cc.Node",
@@ -1366,7 +1364,17 @@
         "__id__": 51
       }
     ],
-    "enemies": [],
+    "enemies": [
+      {
+        "__id__": 36
+      },
+      {
+        "__id__": 38
+      },
+      {
+        "__id__": 41
+      }
+    ],
     "mask": {
       "__id__": 14
     },

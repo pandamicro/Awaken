@@ -1025,7 +1025,7 @@
       "__id__": 37
     },
     "gravity": -8,
-    "Attractive": 600,
+    "Attractive": 900,
     "jumpHeight": 100,
     "jumpDuration": 1,
     "maxMoveSpeed": 200,
@@ -1033,7 +1033,7 @@
     "maxJumpCount": 2,
     "accelX": 0,
     "accelY": 0,
-    "weaken": 0.05
+    "weaken": 0.04
   },
   {
     "__type__": "cc.Node",
@@ -1459,7 +1459,17 @@
         "__id__": 53
       }
     ],
-    "enemies": [],
+    "enemies": [
+      {
+        "__id__": 38
+      },
+      {
+        "__id__": 40
+      },
+      {
+        "__id__": 43
+      }
+    ],
     "mask": {
       "__id__": 16
     },
@@ -1510,8 +1520,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 376,
-      "y": 212
+      "x": 304,
+      "y": 164
     },
     "_skewX": 0,
     "_skewY": 0,
