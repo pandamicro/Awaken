@@ -1,16 +1,16 @@
 {
   "ver": "1.0.0",
-  "uuid": "76e56f52-1bed-4682-a6a6-1fc9c598d27f",
+  "uuid": "061a3277-83af-4643-a2b6-93abb96c3211",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "Level1Map": {
+    "地图左上": {
       "ver": "1.0.3",
-      "uuid": "39fb3229-d436-4552-a172-5d40fd030800",
-      "rawTextureUuid": "76e56f52-1bed-4682-a6a6-1fc9c598d27f",
+      "uuid": "0e22a558-434e-4ce3-b751-713053c7d43c",
+      "rawTextureUuid": "061a3277-83af-4643-a2b6-93abb96c3211",
       "trimType": "auto",
-      "trimThreshold": 1,
+      "trimThreshold": 0,
       "rotated": false,
       "offsetX": 0,
       "offsetY": 0,
