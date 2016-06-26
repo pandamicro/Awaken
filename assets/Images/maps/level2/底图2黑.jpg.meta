@@ -1,16 +1,16 @@
 {
   "ver": "1.0.0",
-  "uuid": "d9caa94b-e232-4860-8c56-5785286b8fcb",
+  "uuid": "e67aa4f7-dc3a-4fce-a872-c479eb3a6741",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "地图1": {
+    "底图2黑": {
       "ver": "1.0.3",
-      "uuid": "2a961c67-3b16-4335-857b-5df83a9321ff",
-      "rawTextureUuid": "d9caa94b-e232-4860-8c56-5785286b8fcb",
+      "uuid": "680ac76f-f25c-4b2b-9ad6-3d1a9c9c235b",
+      "rawTextureUuid": "e67aa4f7-dc3a-4fce-a872-c479eb3a6741",
       "trimType": "auto",
-      "trimThreshold": 1,
+      "trimThreshold": 0,
       "rotated": false,
       "offsetX": 0,
       "offsetY": 0,
