@@ -1,5 +1,6 @@
 
 var Player = require("Player");
+var Attacker = require("Attacker");
 
 cc.Class({
     extends: cc.Component,
@@ -15,15 +16,11 @@ cc.Class({
         // },
         // ...
         
-        starPrefab: {
-            default: null,
-            type: cc.Prefab
-        },
+        starPrefab: cc.Prefab,
         
-        starButton: {
-            default: null,
-            type: cc.Node
-        },
+        starButton: cc.Node,
+
+        light: Attacker
     },
 
     // use this for initialization
@@ -36,6 +33,7 @@ cc.Class({
         for( var i=0;i<12;i++)
         {
             var newStar = cc.instantiate(this.starPrefab);
+            newStar.getComponent('HeadTrigger').hero = this.light;
             // 将新增的节点添加到 Canvas 节点下面
             faceParent.addChild(newStar);
             // 为星星设置一个随机位置
@@ -43,7 +41,7 @@ cc.Class({
             newStar.zIndex=(12-i);
             OffsetX=OffsetX+160;
             
-            var  Head=newStar.getComponent("LevelButton");  
+            var Head=newStar.getComponent("LevelButton");  
            // Head.HeadsUp();
             
             this.Array.push(newStar);
@@ -140,6 +138,12 @@ cc.Class({
             if(offsetX<=100  )
             {
                 Head.HeadsUp();
+
+                // Run fire animation
+                this.scheduleOnce(function () {
+                    this.light.node.active = true;
+                    this.light.node.getComponent(cc.Animation).play();
+                }, 4);
             }
             else
             {

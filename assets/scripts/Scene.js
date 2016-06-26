@@ -99,7 +99,9 @@ cc.Class({
         this.drawNode.stopAllActions();
         this.drawNode.opacity = 0;
         this.drawNode.runAction(this.action);
+    
 
+        
         for (var t in this.targets) {
             var targetx = this.targets[t].x + this.node.width/2;
             var targety = this.node.height/2 - this.targets[t].y;

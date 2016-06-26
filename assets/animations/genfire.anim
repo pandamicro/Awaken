@@ -1,0 +1,46 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "genfire",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 1,
+  "curveData": {
+    "props": {
+      "opacity": [
+        {
+          "frame": 0,
+          "value": 0
+        },
+        {
+          "frame": 1,
+          "value": 255
+        }
+      ],
+      "x": [
+        {
+          "frame": 0,
+          "value": -14
+        },
+        {
+          "frame": 1,
+          "value": 23
+        }
+      ],
+      "scaleX": [],
+      "y": [
+        {
+          "frame": 0,
+          "value": -115
+        },
+        {
+          "frame": 1,
+          "value": 235
+        }
+      ]
+    }
+  },
+  "events": []
+}
