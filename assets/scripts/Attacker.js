@@ -17,8 +17,10 @@ var Attacker = cc.Class({
         if (!this.target) {
             this.target = target;
 
+            var trans = this.target.getNodeToWorldTransform();
+
             var action = cc.sequence(
-                cc.moveTo(1, target.x, target.y).easing(cc.easeInOut(2.0)),
+                cc.moveTo(1, this.node.x + (trans.tx + this.target.width/2) - this.camera.x - cc.winSize.width / 2, this.node.y + (trans.ty - this.target.height/2) - this.camera.y - cc.winSize.height / 2).easing(cc.easeInOut(2.0)),
                 cc.callFunc(this.preEnter, this)
             );
             this.node.runAction(action);
