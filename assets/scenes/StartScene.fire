@@ -103,7 +103,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "camera",
+    "_name": "title",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -272,7 +272,7 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 89,
+      "x": 0,
       "y": 0
     },
     "_skewX": 0,
@@ -1819,8 +1819,8 @@
     },
     "offset": {
       "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
+      "x": 26,
+      "y": 26
     },
     "scale": 1,
     "scene": {
@@ -1843,6 +1843,9 @@
     "_clips": [
       {
         "__uuid__": "5f98fe0d-f467-4c74-a1fb-d5f076c9ea94"
+      },
+      {
+        "__uuid__": "aae5429c-8b1e-45b7-bcd7-4cb623c9018f"
       }
     ],
     "playOnLoad": false

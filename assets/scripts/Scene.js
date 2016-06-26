@@ -130,7 +130,7 @@ cc.Class({
     },
 
     pass: function () {
-        if (this.level === 3) {
+        if (this.level === 2) {
             return;
         }
 
@@ -143,7 +143,7 @@ cc.Class({
         // Fade out current camera, Fade in title
         currLevel.runAction(cc.sequence(
             cc.fadeOut(1.5),
-            cc.callFunc(this.destroy, this)
+            cc.callFunc(currLevel.destroy, currLevel)
         ));
 
         title.active = true;
