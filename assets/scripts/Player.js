@@ -71,9 +71,11 @@ var Player = cc.Class({
         if (succeed) {
             this._active = false;
             this.scene.startSpread();
+            cc.audioEngine.playEffect("res/raw-assets/resources/win.wav", false, 1);
         }
         else {
             this.die();
+            
         }
     },
 
@@ -90,6 +92,7 @@ var Player = cc.Class({
     },
 
     die: function () {
+        cc.audioEngine.playEffect("res/raw-assets/resources/lose.wav", false, 1);
         this._active = false;
         this.node.getChildByName('normal').active = false;
         var explode = this.node.getChildByName('explode');
