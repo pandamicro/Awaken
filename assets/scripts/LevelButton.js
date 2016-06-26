@@ -13,7 +13,14 @@ cc.Class({
         // ...
         Stage:1,
         pass:0,
+        animationFlag : 1 ,
         HeasUpMoveHeight : 20,
+        
+        starPrefab: {
+            default: null,
+            type: cc.Prefab
+        },
+        
         
         frames:[cc.SpriteFrame]
     },
@@ -24,7 +31,7 @@ cc.Class({
         this.node.activate=false;
         
         var Head= this.node.getChildByName("Head");
-        if(Head!==null)
+        if(Head!==null && this.animationFlag==1)
         {
             if(this.pass===0)
             {
@@ -38,7 +45,7 @@ cc.Class({
                 Head.y=Head.y+this.HeasUpMoveHeight;
             }
             
-            this.Breath();
+            //this.Breath();
             
         }
         
@@ -46,10 +53,18 @@ cc.Class({
         
         
     },
+    
 
-    startLevel : function ()
+        startLevel : function ()
+        {
+            //var level =cc.instantiate(this.starPrefab); 
+            
+            
+            cc.director.loadScene("Level-1");
+        },
+    
+    PassLevel : function ()
     {
-       
        this.HeadsUp();
     },
     
@@ -116,9 +131,10 @@ cc.Class({
             var time=1.5;
             
             
-            var f1=    cc.fadeOut(time).easing(cc.easeIn(3));
+            var f1=    cc.fadeOut(time*2).easing(cc.easeIn(3));
             face.setCascadeOpacityEnabled(true);
-            face.runAction(f1);
+            var s0= cc.sequence( cc.delayTime(time), f1);
+            face.runAction(s0);
             
             Head.getComponent(cc.Sprite).spriteFrame = this.frames[0];
             
@@ -126,7 +142,7 @@ cc.Class({
             
             var r1=cc.rotateTo(time, 0, 0);
             
-            var s= cc.sequence(r1,cc.callFunc(function(action,data)
+            var s= cc.sequence(cc.delayTime(time),r1,cc.callFunc(function(action,data)
             {
                 this.Breath();
             },this,0));
@@ -134,7 +150,8 @@ cc.Class({
             Head.runAction(s);
             
             var m=cc.moveBy(time, this.HeasUpMoveHeight, this.HeasUpMoveHeight);
-            Head.runAction(m);
+            var s2= cc.sequence( cc.delayTime(time), m);
+            Head.runAction(s2);
             
         }
     },
