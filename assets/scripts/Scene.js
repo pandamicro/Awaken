@@ -99,9 +99,7 @@ cc.Class({
         this.drawNode.stopAllActions();
         this.drawNode.opacity = 0;
         this.drawNode.runAction(this.action);
-    
 
-        
         for (var t in this.targets) {
             var targetx = this.targets[t].x + this.node.width/2;
             var targety = this.node.height/2 - this.targets[t].y;
@@ -132,7 +130,34 @@ cc.Class({
     },
 
     pass: function () {
-        
+        if (this.level === 3) {
+            return;
+        }
+
+        var title = cc.find('Canvas/title');
+        var currLevel = this.node.parent;
+        if (!title || !currLevel) {
+            return;
+        }
+
+        // Fade out current camera, Fade in title
+        currLevel.runAction(cc.sequence(
+            cc.fadeOut(1.5),
+            cc.callFunc(this.destroy, this)
+        ));
+
+        title.active = true;
+        title.getComponent(cc.Animation).play('back_to_title');
+
+        setTimeout(function () {
+            if (title.currentTarget) {
+                var levelBtn = title.currentTarget.getComponent('LevelButton');
+                if (levelBtn) {
+                    levelBtn.HeadsUp();
+                }
+                title.currentTarget = null;
+            }
+        }, 2000);
     },
 
     hideDrawNode: function () {
