@@ -10,7 +10,7 @@
       "uuid": "2b5d1e68-795c-4ed7-bfef-ec96fc07a12b",
       "rawTextureUuid": "f74b2e9a-89ec-41d8-9cde-9f3904fcc8f0",
       "trimType": "auto",
-      "trimThreshold": 1,
+      "trimThreshold": 0,
       "rotated": false,
       "offsetX": 0,
       "offsetY": 0,
