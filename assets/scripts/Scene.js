@@ -148,6 +148,10 @@ cc.Class({
 
         title.active = true;
         title.getComponent(cc.Animation).play('back_to_title');
+        var attacker = title.getChildByName('hero').getComponent('Attacker');
+        if (attacker) {
+            attacker.goback();
+        }
 
         setTimeout(function () {
             if (title.currentTarget) {

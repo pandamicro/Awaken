@@ -13,6 +13,11 @@ var Attacker = cc.Class({
         this.target = null;
     },
 
+    goback: function () {
+        var action = cc.sequence(cc.delayTime(2), cc.moveTo(1, 0, 250).easing(cc.easeInOut(2.0)));
+        this.node.runAction(action);
+    },
+
     attack: function (target) {
         if (!this.target) {
             this.target = target;
@@ -38,6 +43,7 @@ var Attacker = cc.Class({
 
         var camera = this.camera;
         var canvas = this.camera.parent;
+        var self = this;
         cc.loader.loadRes(level, function (err, prefab) {
             if (err) {
                 console.log(err);
@@ -46,7 +52,8 @@ var Attacker = cc.Class({
             var levelCam = cc.instantiate(prefab);
             canvas.addChild(levelCam, 100);
             camera.active = false;
-            camera.currentTarget = this.target;
+            camera.currentTarget = self.target;
+            self.target = null;
             // levelCam.opacity = 0;
         });
     }

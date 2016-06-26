@@ -95,7 +95,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 47
+        "__id__": 48
       }
     ],
     "_prefab": null,
@@ -159,6 +159,9 @@
       },
       {
         "__id__": 46
+      },
+      {
+        "__id__": 47
       }
     ],
     "_prefab": null,
@@ -605,7 +608,7 @@
     "_position": {
       "__type__": "cc.Vec2",
       "x": 3,
-      "y": 214
+      "y": 214.0000000000001
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1539,7 +1542,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "主角",
+    "_name": "hero",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -1750,9 +1753,7 @@
   },
   {
     "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 38
-    },
+    "root": null,
     "asset": {
       "__uuid__": "b7338f0f-1b53-4880-a5e6-90fcc1f96215"
     },
@@ -1798,9 +1799,7 @@
   },
   {
     "__type__": "cc.PrefabInfo",
-    "root": {
-      "__id__": 38
-    },
+    "root": null,
     "asset": {
       "__uuid__": "b7338f0f-1b53-4880-a5e6-90fcc1f96215"
     },
@@ -1849,6 +1848,15 @@
       }
     ],
     "playOnLoad": false
+  },
+  {
+    "__type__": "5a424ilazZFEr6hD0dimEvl",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 3
+    },
+    "_enabled": true
   },
   {
     "__type__": "cc.Canvas",
