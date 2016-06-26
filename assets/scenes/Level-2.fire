@@ -1577,7 +1577,7 @@
       "__id__": 56
     },
     "gravity": -8,
-    "Attractive": 600,
+    "Attractive": 900,
     "jumpHeight": 100,
     "jumpDuration": 1,
     "maxMoveSpeed": 200,
