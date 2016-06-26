@@ -53,11 +53,16 @@ var Player = cc.Class({
         this.JumpCount=0;
         
         this.StartFlag=0;
+
+        this.startX = this.node.x;
+        this.startY = this.node.y;
         
         this.attractiveX=0;
         this.attractiveY=0;
         // 初始化键盘输入监听
         this.setInputControl();
+
+        this._active = true;
     },
 
     lightUp: function () {
@@ -67,6 +72,27 @@ var Player = cc.Class({
         if (succeed) {
             this.scene.startSpread();
         }
+    },
+
+    reborn: function () {
+        this._active = true;
+        this.StartFlag = 0;
+        this.node.x = this.startX;
+        this.node.y = this.startY;
+        var normal = this.node.getChildByName('normal');
+        normal.getComponent(cc.ParticleSystem).resetSystem();
+        normal.active = true;
+        this.node.getChildByName('explode').active = false;
+        this.scene.reset();
+    },
+
+    die: function () {
+        this._active = false;
+        this.node.getChildByName('normal').active = false;
+        var explode = this.node.getChildByName('explode');
+        explode.getComponent(cc.ParticleSystem).resetSystem();
+        explode.active = true;
+        this.scheduleOnce(this.reborn, 1);
     },
 
     
@@ -104,8 +130,6 @@ var Player = cc.Class({
     
     setJumpAction: function () 
     {
-        
-        
         // 跳跃上升
         var jumpUp = cc.moveBy(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
         // 下落
@@ -113,15 +137,12 @@ var Player = cc.Class({
         
         var callBack = cc.CallFunc(this.callBackJumpEnd,this,0);
        
-     //  return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
+        // return cc.repeatForever(cc.sequence(jumpUp, jumpDown));
         return cc.sequence(jumpUp, jumpDown, cc.callFunc(function(action,data)
         {
             this.JumpCount--;
         },this,0));
     },
-    
-
-    
     
     setInputControl: function () {
         var self = this;
@@ -172,7 +193,11 @@ var Player = cc.Class({
     
      update: function (dt) 
      {
-        if(this.StartFlag===0)
+        if (!this._active) {
+            return;
+        }
+
+        if (this.StartFlag===0)
             return;
             
         var temp=this.gravity ;
@@ -222,7 +247,7 @@ var Player = cc.Class({
         // Check dead
         if (!this.scene.checkLive()) {
             // Dead
-            this.enabled = false;
+            this.die();
         }
          
         return;

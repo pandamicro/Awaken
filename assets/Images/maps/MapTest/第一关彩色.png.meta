@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "872a6abf-e4b9-48c0-83ac-20a7f9e7929b",
+  "uuid": "4ed4437f-6e4b-4b04-a168-16afe71efe69",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "第一关地图": {
+    "第一关彩色": {
       "ver": "1.0.3",
-      "uuid": "9c23272d-80fa-430a-848e-717a01561405",
-      "rawTextureUuid": "872a6abf-e4b9-48c0-83ac-20a7f9e7929b",
+      "uuid": "810a8000-ce0e-4c58-a5d5-49e888e06552",
+      "rawTextureUuid": "4ed4437f-6e4b-4b04-a168-16afe71efe69",
       "trimType": "auto",
       "trimThreshold": 1,
       "rotated": false,
