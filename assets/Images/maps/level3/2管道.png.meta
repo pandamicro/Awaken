@@ -1,14 +1,14 @@
 {
   "ver": "1.0.0",
-  "uuid": "061a3277-83af-4643-a2b6-93abb96c3211",
+  "uuid": "2563cc4f-4130-4ea7-9af4-0f5020efee39",
   "type": "sprite",
   "wrapMode": "clamp",
   "filterMode": "bilinear",
   "subMetas": {
-    "地图左上": {
+    "2管道": {
       "ver": "1.0.3",
-      "uuid": "0e22a558-434e-4ce3-b751-713053c7d43c",
-      "rawTextureUuid": "061a3277-83af-4643-a2b6-93abb96c3211",
+      "uuid": "917a5276-17d4-4f90-a20d-a0f8417251ba",
+      "rawTextureUuid": "2563cc4f-4130-4ea7-9af4-0f5020efee39",
       "trimType": "auto",
       "trimThreshold": 0,
       "rotated": false,
