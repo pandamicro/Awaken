@@ -51,6 +51,7 @@ cc.Class({
         
         this.Update();
         this.schedule(this.Update, 9);
+        cc.audioEngine.playMusic("res/raw-assets/resources/bc.mp3", true,true);
     },
     
     MoveHead:function(Head)
@@ -112,11 +113,11 @@ cc.Class({
         var p=this.starButton.getChildByName("p");
         if(p)
         {
-            cc.log("llllll");
+            //cc.log("llllll");
             var pp=p.getComponent("cc.ParticleSystem");
             if(pp)
             {
-                cc.log("rrrrr");
+              //  cc.log("rrrrr");
                 pp.duration=3.5;
             }
         }

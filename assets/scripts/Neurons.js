@@ -43,6 +43,8 @@ cc.Class({
         if (this.attracted >= this.attractCount) {
             return;
         }
+        cc.audioEngine.playEffect("res/raw-assets/resources/fire.wav", false, 1);
+        
         var playerComp = this.player;
         playerComp.BeAttract(this.node.x,this.node.y,this.direction);
         this.attracted++;
