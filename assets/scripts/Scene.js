@@ -41,6 +41,8 @@ cc.Class({
         tex.initWithElement(this.canvas);
         tex.handleLoadedTexture();
         this.drawNode = new _ccsg.Sprite(tex);
+        this.drawNode.anchorX = 0;
+        this.drawNode.anchorY = 0;
         this.node._sgNode.addChild(this.drawNode, 10);
 
         this.action = cc.sequence(
@@ -79,8 +81,8 @@ cc.Class({
 
         this.drawNode.visible = true;
         this.drawNode.texture.handleLoadedTexture();
-        this.drawNode.x = - this.node.x;
-        this.drawNode.y = - this.node.y;
+        this.drawNode.x = -this.node.width/2-trans.tx;
+        this.drawNode.y = -this.node.height/2-trans.ty;
 
         // if (!this.drawNode) {
         //     this.drawNode = new cc.DrawNode();

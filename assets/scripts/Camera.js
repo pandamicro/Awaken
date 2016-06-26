@@ -30,7 +30,7 @@ cc.Class({
 
         this._tracking = false;
         var targetTrans = this.target.getNodeToWorldTransform();
-        this._prevPos = cc.v2(targetTrans.tx, targetTrans.ty);
+        this._prevPos = cc.v2(0, 0);
         this._targetPos = cc.v2();
     },
 
