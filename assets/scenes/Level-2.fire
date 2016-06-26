@@ -95,7 +95,7 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 74
+        "__id__": 78
       }
     ],
     "_prefab": null,
@@ -158,11 +158,11 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 72
+        "__id__": 76
       }
     ],
     "_prefab": {
-      "__id__": 73
+      "__id__": 77
     },
     "groupIndex": 0
   },
@@ -215,13 +215,16 @@
         "__id__": 54
       },
       {
-        "__id__": 58
-      },
-      {
         "__id__": 62
       },
       {
         "__id__": 66
+      },
+      {
+        "__id__": 70
+      },
+      {
+        "__id__": 58
       }
     ],
     "_rotationX": 0,
@@ -248,7 +251,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 71
+      "__id__": 75
     },
     "groupIndex": 0
   },
@@ -913,8 +916,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -723,
-      "y": 113
+      "x": -719,
+      "y": 141
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -934,7 +937,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 70
+      "__id__": 74
     },
     "groupIndex": 0
   },
@@ -1040,8 +1043,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -1030,
-      "y": -28
+      "x": -1024,
+      "y": -14
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1425,9 +1428,22 @@
       },
       {
         "__id__": 66
+      },
+      {
+        "__id__": 70
       }
     ],
-    "enemies": [],
+    "enemies": [
+      {
+        "__id__": 39
+      },
+      {
+        "__id__": 41
+      },
+      {
+        "__id__": 44
+      }
+    ],
     "mask": {
       "__id__": 17
     },
@@ -1478,8 +1494,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 818,
-      "y": -206
+      "x": 319,
+      "y": -229
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1594,8 +1610,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 1489,
-      "y": -136
+      "x": 883,
+      "y": -132
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1685,8 +1701,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 973,
-      "y": 222
+      "x": 474,
+      "y": 199
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1822,8 +1838,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -708,
-      "y": -51
+      "x": -544,
+      "y": -146
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -1930,8 +1946,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -311,
-      "y": 66
+      "x": -178,
+      "y": 2
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2007,7 +2023,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "神经末梢",
+    "_name": "反向神经末梢",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -2038,8 +2054,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -445,
-      "y": -133
+      "x": -133,
+      "y": -79
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2048,7 +2064,7 @@
     "_tag": -1,
     "_opacityModifyRGB": false,
     "_reorderChildDirty": false,
-    "_id": "9bf4dVhsdFCw7i7XcahsOk1",
+    "_id": "0e739e9DTFIaLn+Ewrc25Il",
     "_active": true,
     "_components": [
       {
@@ -2072,7 +2088,7 @@
     },
     "_enabled": true,
     "_spriteFrame": {
-      "__uuid__": "ae0c863c-ad5a-43c7-b483-5130607df904"
+      "__uuid__": "117792c2-85d8-415b-a8dd-9d659ae7f7ba"
     },
     "_type": 0,
     "_sizeMode": 1,
@@ -2100,7 +2116,7 @@
     "player": {
       "__id__": 29
     },
-    "direction": 0,
+    "direction": -1,
     "attractCount": 1
   },
   {
@@ -2111,7 +2127,7 @@
     "asset": {
       "__uuid__": "06055f0f-9d39-4547-b3e1-6a85184d001a"
     },
-    "fileId": "21ce93Rnq5FYoEPtSaRzhac"
+    "fileId": "a6882yMq09PjZQwtenep5gs"
   },
   {
     "__type__": "cc.Node",
@@ -2146,8 +2162,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": -101,
-      "y": -84
+      "x": -265,
+      "y": -152
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2254,8 +2270,8 @@
     "_scaleY": 1,
     "_position": {
       "__type__": "cc.Vec2",
-      "x": 153,
-      "y": 225
+      "x": 341,
+      "y": 79
     },
     "_skewX": 0,
     "_skewY": 0,
@@ -2311,6 +2327,114 @@
     "_objFlags": 0,
     "node": {
       "__id__": 66
+    },
+    "_enabled": true,
+    "player": {
+      "__id__": 29
+    },
+    "direction": 0,
+    "attractCount": 1
+  },
+  {
+    "__type__": "cc.PrefabInfo",
+    "root": {
+      "__id__": 3
+    },
+    "asset": {
+      "__uuid__": "06055f0f-9d39-4547-b3e1-6a85184d001a"
+    },
+    "fileId": "21ce93Rnq5FYoEPtSaRzhac"
+  },
+  {
+    "__type__": "cc.Node",
+    "_name": "神经末梢",
+    "_objFlags": 0,
+    "_opacity": 255,
+    "_color": {
+      "__type__": "cc.Color",
+      "r": 255,
+      "g": 255,
+      "b": 255,
+      "a": 255
+    },
+    "_cascadeOpacityEnabled": true,
+    "_parent": {
+      "__id__": 4
+    },
+    "_anchorPoint": {
+      "__type__": "cc.Vec2",
+      "x": 0.5,
+      "y": 0.5
+    },
+    "_contentSize": {
+      "__type__": "cc.Size",
+      "width": 67,
+      "height": 67
+    },
+    "_children": [],
+    "_rotationX": 0,
+    "_rotationY": 0,
+    "_scaleX": 1,
+    "_scaleY": 1,
+    "_position": {
+      "__type__": "cc.Vec2",
+      "x": -448,
+      "y": 103
+    },
+    "_skewX": 0,
+    "_skewY": 0,
+    "_localZOrder": 0,
+    "_globalZOrder": 0,
+    "_tag": -1,
+    "_opacityModifyRGB": false,
+    "_reorderChildDirty": false,
+    "_id": "2f45cztFWpMg7rD6rpj5NXX",
+    "_active": true,
+    "_components": [
+      {
+        "__id__": 71
+      },
+      {
+        "__id__": 72
+      }
+    ],
+    "_prefab": {
+      "__id__": 73
+    },
+    "groupIndex": 0
+  },
+  {
+    "__type__": "cc.Sprite",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 70
+    },
+    "_enabled": true,
+    "_spriteFrame": {
+      "__uuid__": "ae0c863c-ad5a-43c7-b483-5130607df904"
+    },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
+    "_srcBlendFactor": 770,
+    "_dstBlendFactor": 771,
+    "_atlas": null
+  },
+  {
+    "__type__": "3f7256gqgtNJIynjU25pqrd",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 70
     },
     "_enabled": true,
     "player": {
