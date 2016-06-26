@@ -11,6 +11,7 @@ cc.Class({
         //    readonly: false,    // optional, default is false
         // },
         // ...
+        direction:1
     },
 
     // use this for initialization
@@ -18,7 +19,7 @@ cc.Class({
 
 
         var  t= Math.random()*3+2;
-        var a1 = cc.rotateBy(t, 30, 30)//(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
+        var a1 = cc.rotateBy(t, 30*this.direction, 30*this.direction)//(this.jumpDuration, cc.p(0, this.jumpHeight)).easing(cc.easeCubicActionOut());
         // 下落
         var a2  = cc.scaleTo(3,1.1,1.1);
         var a3  = cc.scaleTo(3,1,1);

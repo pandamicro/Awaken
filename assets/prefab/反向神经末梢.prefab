@@ -61,10 +61,13 @@
       },
       {
         "__id__": 7
+      },
+      {
+        "__id__": 8
       }
     ],
     "_prefab": {
-      "__id__": 8
+      "__id__": 9
     },
     "groupIndex": 0
   },
@@ -159,7 +162,8 @@
     "node": {
       "__id__": 2
     },
-    "_enabled": true
+    "_enabled": true,
+    "direction": 1
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -208,6 +212,16 @@
     "player": null,
     "direction": -1,
     "attractCount": 1
+  },
+  {
+    "__type__": "91a05FJW0xE1YD6+w6bAOMm",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 1
+    },
+    "_enabled": true,
+    "direction": -1
   },
   {
     "__type__": "cc.PrefabInfo",
