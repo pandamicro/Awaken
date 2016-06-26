@@ -49,7 +49,7 @@
         "__id__": 37
       },
       {
-        "__id__": 66
+        "__id__": 69
       }
     ],
     "_rotationX": 0,
@@ -72,14 +72,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 74
+        "__id__": 77
       },
       {
-        "__id__": 75
+        "__id__": 78
       }
     ],
     "_prefab": {
-      "__id__": 76
+      "__id__": 79
     },
     "groupIndex": 0
   },
@@ -435,10 +435,10 @@
         "__id__": 23
       },
       {
-        "__id__": 56
+        "__id__": 59
       },
       {
-        "__id__": 60
+        "__id__": 63
       }
     ],
     "_rotationX": 0,
@@ -465,7 +465,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 65
+      "__id__": 68
     },
     "groupIndex": 0
   },
@@ -874,7 +874,7 @@
       }
     ],
     "_prefab": {
-      "__id__": 64
+      "__id__": 67
     },
     "groupIndex": 0
   },
@@ -1350,7 +1350,7 @@
         "__id__": 38
       },
       {
-        "__id__": 44
+        "__id__": 45
       }
     ],
     "handles": [
@@ -1358,10 +1358,10 @@
         "__id__": 23
       },
       {
-        "__id__": 56
+        "__id__": 59
       },
       {
-        "__id__": 60
+        "__id__": 63
       }
     ],
     "enemies": [
@@ -1372,7 +1372,7 @@
         "__id__": 38
       },
       {
-        "__id__": 44
+        "__id__": 45
       }
     ],
     "mask": {
@@ -1415,12 +1415,12 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 54,
-      "height": 54
+      "width": 68,
+      "height": 68
     },
     "_children": [
       {
-        "__id__": 51
+        "__id__": 53
       }
     ],
     "_rotationX": 0,
@@ -1443,11 +1443,11 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 54
+        "__id__": 57
       }
     ],
     "_prefab": {
-      "__id__": 55
+      "__id__": 58
     },
     "groupIndex": 0
   },
@@ -1485,7 +1485,7 @@
         "__id__": 38
       },
       {
-        "__id__": 44
+        "__id__": 45
       }
     ],
     "_rotationX": 0,
@@ -1508,7 +1508,7 @@
     "_active": true,
     "_components": [],
     "_prefab": {
-      "__id__": 50
+      "__id__": 52
     },
     "groupIndex": 0
   },
@@ -1535,8 +1535,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 54,
-      "height": 54
+      "width": 68,
+      "height": 68
     },
     "_children": [
       {
@@ -1563,17 +1563,17 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 42
+        "__id__": 43
       }
     ],
     "_prefab": {
-      "__id__": 43
+      "__id__": 44
     },
     "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Particle",
+    "_name": "New Sprite",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -1594,14 +1594,14 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
+      "width": 44,
+      "height": 44
     },
     "_children": [],
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0.7,
+    "_scaleY": 0.7,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1619,103 +1619,50 @@
     "_components": [
       {
         "__id__": 40
+      },
+      {
+        "__id__": 41
       }
     ],
     "_prefab": {
-      "__id__": 41
+      "__id__": 42
     },
     "groupIndex": 0
   },
   {
-    "__type__": "cc.ParticleSystem",
+    "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 39
     },
     "_enabled": true,
-    "_custom": false,
-    "_file": {
-      "__uuid__": "323634c0-6260-4413-9ce7-2b1fdad24a29"
+    "_spriteFrame": {
+      "__uuid__": "99447eb5-073a-426e-81a3-bd877d03e363"
     },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "playOnLoad": true,
-    "_autoRemoveOnFinish": true,
-    "_totalParticles": 150,
-    "_duration": -1,
-    "_emissionRate": 10,
-    "_life": 1,
-    "_lifeVar": 0,
-    "_startColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
+    "_atlas": null
+  },
+  {
+    "__type__": "91a05FJW0xE1YD6+w6bAOMm",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 39
     },
-    "_startColorVar": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "a": 255
-    },
-    "_endColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 0
-    },
-    "_endColorVar": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "a": 0
-    },
-    "_angle": 90,
-    "_angleVar": 20,
-    "_startSize": 50,
-    "_startSizeVar": 0,
-    "_endSize": 0,
-    "_endSizeVar": 0,
-    "_startSpin": 0,
-    "_startSpinVar": 0,
-    "_endSpin": 0,
-    "_endSpinVar": 0,
-    "_sourcePos": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_posVar": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_positionType": 0,
-    "_emitterMode": 0,
-    "_gravity": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_speed": 180,
-    "_speedVar": 50,
-    "_tangentialAccel": 80,
-    "_tangentialAccelVar": 0,
-    "_radialAccel": 0,
-    "_radialAccelVar": 0,
-    "_rotationIsDir": false,
-    "_startRadius": 0,
-    "_startRadiusVar": 0,
-    "_endRadius": 0,
-    "_endRadiusVar": 0,
-    "_rotatePerS": 0,
-    "_rotatePerSVar": 0,
-    "_N$preview": true
+    "_enabled": true
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1786,12 +1733,12 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 54,
-      "height": 54
+      "width": 68,
+      "height": 68
     },
     "_children": [
       {
-        "__id__": 45
+        "__id__": 46
       }
     ],
     "_rotationX": 0,
@@ -1814,17 +1761,17 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 48
+        "__id__": 50
       }
     ],
     "_prefab": {
-      "__id__": 49
+      "__id__": 51
     },
     "groupIndex": 0
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Particle",
+    "_name": "New Sprite",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -1836,7 +1783,7 @@
     },
     "_cascadeOpacityEnabled": true,
     "_parent": {
-      "__id__": 44
+      "__id__": 45
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1845,14 +1792,14 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
+      "width": 44,
+      "height": 44
     },
     "_children": [],
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0.7,
+    "_scaleY": 0.7,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -1869,104 +1816,51 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 46
+        "__id__": 47
+      },
+      {
+        "__id__": 48
       }
     ],
     "_prefab": {
-      "__id__": 47
+      "__id__": 49
     },
     "groupIndex": 0
   },
   {
-    "__type__": "cc.ParticleSystem",
+    "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 45
+      "__id__": 46
     },
     "_enabled": true,
-    "_custom": false,
-    "_file": {
-      "__uuid__": "323634c0-6260-4413-9ce7-2b1fdad24a29"
+    "_spriteFrame": {
+      "__uuid__": "99447eb5-073a-426e-81a3-bd877d03e363"
     },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "playOnLoad": true,
-    "_autoRemoveOnFinish": true,
-    "_totalParticles": 150,
-    "_duration": -1,
-    "_emissionRate": 10,
-    "_life": 1,
-    "_lifeVar": 0,
-    "_startColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
+    "_atlas": null
+  },
+  {
+    "__type__": "91a05FJW0xE1YD6+w6bAOMm",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 46
     },
-    "_startColorVar": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "a": 255
-    },
-    "_endColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 0
-    },
-    "_endColorVar": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "a": 0
-    },
-    "_angle": 90,
-    "_angleVar": 20,
-    "_startSize": 50,
-    "_startSizeVar": 0,
-    "_endSize": 0,
-    "_endSizeVar": 0,
-    "_startSpin": 0,
-    "_startSpinVar": 0,
-    "_endSpin": 0,
-    "_endSpinVar": 0,
-    "_sourcePos": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_posVar": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_positionType": 0,
-    "_emitterMode": 0,
-    "_gravity": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_speed": 180,
-    "_speedVar": 50,
-    "_tangentialAccel": 80,
-    "_tangentialAccelVar": 0,
-    "_radialAccel": 0,
-    "_radialAccelVar": 0,
-    "_rotationIsDir": false,
-    "_startRadius": 0,
-    "_startRadiusVar": 0,
-    "_endRadius": 0,
-    "_endRadiusVar": 0,
-    "_rotatePerS": 0,
-    "_rotatePerSVar": 0,
-    "_N$preview": true
+    "_enabled": true
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -1983,7 +1877,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 44
+      "__id__": 45
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -2026,7 +1920,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "New Particle",
+    "_name": "New Sprite",
     "_objFlags": 0,
     "_opacity": 255,
     "_color": {
@@ -2047,14 +1941,14 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 0,
-      "height": 0
+      "width": 44,
+      "height": 44
     },
     "_children": [],
     "_rotationX": 0,
     "_rotationY": 0,
-    "_scaleX": 1,
-    "_scaleY": 1,
+    "_scaleX": 0.7,
+    "_scaleY": 0.7,
     "_position": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -2071,104 +1965,51 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 52
+        "__id__": 54
+      },
+      {
+        "__id__": 55
       }
     ],
     "_prefab": {
-      "__id__": 53
+      "__id__": 56
     },
     "groupIndex": 0
   },
   {
-    "__type__": "cc.ParticleSystem",
+    "__type__": "cc.Sprite",
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 51
+      "__id__": 53
     },
     "_enabled": true,
-    "_custom": false,
-    "_file": {
-      "__uuid__": "323634c0-6260-4413-9ce7-2b1fdad24a29"
+    "_spriteFrame": {
+      "__uuid__": "99447eb5-073a-426e-81a3-bd877d03e363"
     },
+    "_type": 0,
+    "_sizeMode": 1,
+    "_fillType": 0,
+    "_fillCenter": {
+      "__type__": "cc.Vec2",
+      "x": 0,
+      "y": 0
+    },
+    "_fillStart": 0,
+    "_fillRange": 0,
+    "_isTrimmedMode": true,
     "_srcBlendFactor": 770,
     "_dstBlendFactor": 771,
-    "playOnLoad": true,
-    "_autoRemoveOnFinish": true,
-    "_totalParticles": 150,
-    "_duration": -1,
-    "_emissionRate": 10,
-    "_life": 1,
-    "_lifeVar": 0,
-    "_startColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 255
+    "_atlas": null
+  },
+  {
+    "__type__": "91a05FJW0xE1YD6+w6bAOMm",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 53
     },
-    "_startColorVar": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "a": 255
-    },
-    "_endColor": {
-      "__type__": "cc.Color",
-      "r": 255,
-      "g": 255,
-      "b": 255,
-      "a": 0
-    },
-    "_endColorVar": {
-      "__type__": "cc.Color",
-      "r": 0,
-      "g": 0,
-      "b": 0,
-      "a": 0
-    },
-    "_angle": 90,
-    "_angleVar": 20,
-    "_startSize": 50,
-    "_startSizeVar": 0,
-    "_endSize": 0,
-    "_endSizeVar": 0,
-    "_startSpin": 0,
-    "_startSpinVar": 0,
-    "_endSpin": 0,
-    "_endSpinVar": 0,
-    "_sourcePos": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_posVar": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_positionType": 0,
-    "_emitterMode": 0,
-    "_gravity": {
-      "__type__": "cc.Vec2",
-      "x": 0,
-      "y": 0
-    },
-    "_speed": 180,
-    "_speedVar": 50,
-    "_tangentialAccel": 80,
-    "_tangentialAccelVar": 0,
-    "_radialAccel": 0,
-    "_radialAccelVar": 0,
-    "_rotationIsDir": false,
-    "_startRadius": 0,
-    "_startRadiusVar": 0,
-    "_endRadius": 0,
-    "_endRadiusVar": 0,
-    "_rotatePerS": 0,
-    "_rotatePerSVar": 0,
-    "_N$preview": true
+    "_enabled": true
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -2263,14 +2104,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 57
+        "__id__": 60
       },
       {
-        "__id__": 58
+        "__id__": 61
       }
     ],
     "_prefab": {
-      "__id__": 59
+      "__id__": 62
     },
     "groupIndex": 0
   },
@@ -2279,7 +2120,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 56
+      "__id__": 59
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -2305,7 +2146,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 56
+      "__id__": 59
     },
     "_enabled": true,
     "player": {
@@ -2371,14 +2212,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 61
+        "__id__": 64
       },
       {
-        "__id__": 62
+        "__id__": 65
       }
     ],
     "_prefab": {
-      "__id__": 63
+      "__id__": 66
     },
     "groupIndex": 0
   },
@@ -2387,7 +2228,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 60
+      "__id__": 63
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -2413,7 +2254,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 60
+      "__id__": 63
     },
     "_enabled": true,
     "player": {
@@ -2480,7 +2321,7 @@
     },
     "_children": [
       {
-        "__id__": 67
+        "__id__": 70
       }
     ],
     "_rotationX": 0,
@@ -2503,14 +2344,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 71
+        "__id__": 74
       },
       {
-        "__id__": 72
+        "__id__": 75
       }
     ],
     "_prefab": {
-      "__id__": 73
+      "__id__": 76
     },
     "groupIndex": 0
   },
@@ -2528,7 +2369,7 @@
     },
     "_cascadeOpacityEnabled": true,
     "_parent": {
-      "__id__": 66
+      "__id__": 69
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2561,14 +2402,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 68
+        "__id__": 71
       },
       {
-        "__id__": 69
+        "__id__": 72
       }
     ],
     "_prefab": {
-      "__id__": 70
+      "__id__": 73
     },
     "groupIndex": 0
   },
@@ -2577,7 +2418,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 67
+      "__id__": 70
     },
     "_enabled": true,
     "_spriteFrame": {
@@ -2603,7 +2444,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 67
+      "__id__": 70
     },
     "_enabled": true,
     "fadeDuration": 1,
@@ -2624,7 +2465,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 66
+      "__id__": 69
     },
     "_enabled": true,
     "_defaultClip": {
@@ -2642,7 +2483,7 @@
     "_name": "",
     "_objFlags": 0,
     "node": {
-      "__id__": 66
+      "__id__": 69
     },
     "_enabled": true,
     "_spriteFrame": {
