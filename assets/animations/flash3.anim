@@ -3,7 +3,7 @@
   "_name": "flash3",
   "_objFlags": 0,
   "_rawFiles": null,
-  "_duration": 4.52,
+  "_duration": 4.516666666666667,
   "sample": 60,
   "speed": 1,
   "wrapMode": 1,
@@ -17,10 +17,11 @@
           },
           {
             "frame": 0.9166666666666666,
-            "value": 2.1
+            "value": 2.1,
+            "curve": "quartOut"
           },
           {
-            "frame": 3.5,
+            "frame": 3,
             "value": 0.5
           }
         ]
@@ -36,7 +37,7 @@
             },
             {
               "frame": 4.516666666666667,
-              "value": 2200
+              "value": 5000
             }
           ],
           "height": [
@@ -46,7 +47,7 @@
             },
             {
               "frame": 4.516666666666667,
-              "value": 2200
+              "value": 5000
             }
           ]
         }
@@ -60,7 +61,7 @@
             },
             {
               "frame": 4.516666666666667,
-              "value": 4.56
+              "value": 7.56
             }
           ],
           "scaleY": [
@@ -70,7 +71,7 @@
             },
             {
               "frame": 4.516666666666667,
-              "value": 4.56
+              "value": 7.56
             }
           ]
         }
