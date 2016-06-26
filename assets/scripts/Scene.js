@@ -33,8 +33,8 @@ cc.Class({
         this.segments.unshift([[-1,-1],[width+1,-1],[width+1,height+1],[-1,height+1]]);
 
         this.canvas = document.createElement('CANVAS');
-        this.canvas.width = cc.winSize.width;
-        this.canvas.height = cc.winSize.height;
+        this.canvas.width = this.node.width;
+        this.canvas.height = this.node.height;
         this.ctx = this.canvas.getContext('2d');
 
         var tex = new cc.Texture2D();
@@ -65,12 +65,12 @@ cc.Class({
         var width = this.node.width;
         var height = this.node.height;
         var position = [this.hero.x - this.node.x + width/2, height - (this.hero.y - this.node.y + height/2)];
-        var vertices = VisibilityPolygon.computeViewport(position, this.segments, [-this.node.x, -this.node.y], [width, height]);
+        var vertices = VisibilityPolygon.compute(position, this.segments);
 
         this.ctx.beginPath();
         this.ctx.clearRect(0, 0, width, height);
-        var trans = this.node.getNodeToWorldTransform();
-        this.ctx.setTransform(trans.a, trans.b, trans.c, trans.d, trans.tx, trans.ty);
+        // var trans = this.node.getNodeToWorldTransform();
+        // this.ctx.setTransform(trans.a, trans.b, trans.c, trans.d, trans.tx, trans.ty);
         this.ctx.moveTo(vertices[0][0], vertices[0][1]);
         for (var i = 1; i < vertices.length; ++i) {
             this.ctx.lineTo(vertices[i][0], vertices[i][1]);
@@ -81,8 +81,8 @@ cc.Class({
 
         this.drawNode.visible = true;
         this.drawNode.texture.handleLoadedTexture();
-        this.drawNode.x = -this.node.width/2-trans.tx;
-        this.drawNode.y = -this.node.height/2-trans.ty;
+        this.drawNode.x = -this.node.width/2;
+        this.drawNode.y = -this.node.height/2;
 
         // if (!this.drawNode) {
         //     this.drawNode = new cc.DrawNode();
