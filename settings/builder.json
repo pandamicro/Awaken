@@ -1,0 +1,16 @@
+{
+  "excludeScenes": [
+    "0421ca8e-9f5b-435b-86b8-cb3bb8a49ea2",
+    "ee566e85-1274-4695-8a6f-5366efb35026"
+  ],
+  "orientation": {
+    "landscapeLeft": true,
+    "landscapeRight": true,
+    "portrait": false,
+    "upsideDown": false
+  },
+  "packageName": "org.cocos2d.BrainHacker",
+  "startScene": "2e0c4a30-6a1a-4cc8-aa31-3ec574b345ed",
+  "title": "BrainHacker",
+  "webOrientation": "landscape"
+}
