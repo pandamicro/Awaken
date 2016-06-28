@@ -1,0 +1,30 @@
+{
+  "ver": "1.0.0",
+  "uuid": "14e5513b-db45-4c41-a921-a1d3941a8da3",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "subMetas": {
+    "光芒按钮第二层": {
+      "ver": "1.0.3",
+      "uuid": "a14f6e9d-554d-477d-a401-545a554b76aa",
+      "rawTextureUuid": "14e5513b-db45-4c41-a921-a1d3941a8da3",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 1,
+      "offsetY": -1,
+      "trimX": 26,
+      "trimY": 26,
+      "width": 65,
+      "height": 65,
+      "rawWidth": 115,
+      "rawHeight": 115,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}

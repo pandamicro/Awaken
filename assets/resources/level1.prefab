@@ -1529,7 +1529,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 68,
-      "height": 68
+      "height": 67
     },
     "_children": [
       {
@@ -1649,7 +1649,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 68,
-      "height": 68
+      "height": 67
     },
     "_children": [
       {
@@ -1848,7 +1848,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 68,
-      "height": 68
+      "height": 67
     },
     "_children": [
       {
@@ -2685,7 +2685,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 1136,
-      "height": 635
+      "height": 634
     },
     "_children": [
       {

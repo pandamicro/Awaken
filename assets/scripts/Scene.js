@@ -54,6 +54,15 @@ cc.Class({
         );
     },
 
+    start: function () {
+        this.lightBtn = cc.find('Canvas/light');
+        this.lightBtn.zIndex = 200;
+        this.lightBtn.active = true;
+        this.lightBtn.getComponent(cc.Animation).play();
+        var hero = this.hero.getComponent('Player');
+        this.lightBtn.on('touchstart', hero.lightUp, hero);
+    },
+
     reset: function () {
         var i;
         for (i = 0; i < this.handles.length; i++) {
@@ -124,6 +133,11 @@ cc.Class({
         this.phare.y = y;
         this.colorScene.x = -this.mask.x;
         this.colorScene.y = -this.mask.y;
+
+        this.lightBtn.getComponent(cc.Animation).stop();
+        var hero = this.hero.getComponent('Player');
+        this.lightBtn.off('touchstart', hero.lightUp, hero);
+        this.lightBtn.active = false;
 
         this.node.parent.getComponent(cc.Animation).play();
         this.scheduleOnce(this.pass, 4);

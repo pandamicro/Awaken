@@ -69,13 +69,12 @@ var Player = cc.Class({
         var succeed = this.scene.lightUp();
 
         if (succeed) {
-            this._active = false;
             this.scene.startSpread();
+            this._active = false;
             cc.audioEngine.playEffect("res/raw-assets/resources/win.wav", false, 1);
         }
         else {
             this.die();
-            
         }
     },
 

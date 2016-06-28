@@ -1,0 +1,35 @@
+{
+  "__type__": "cc.AnimationClip",
+  "_name": "light",
+  "_objFlags": 0,
+  "_rawFiles": null,
+  "_duration": 1.3333333333333333,
+  "sample": 60,
+  "speed": 1,
+  "wrapMode": 2,
+  "curveData": {
+    "paths": {
+      "光芒按钮第二层": {
+        "props": {
+          "opacity": [
+            {
+              "frame": 0,
+              "value": 128,
+              "curve": "cubicOut"
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": 255,
+              "curve": "cubicIn"
+            },
+            {
+              "frame": 1.3333333333333333,
+              "value": 128
+            }
+          ]
+        }
+      }
+    }
+  },
+  "events": []
+}
